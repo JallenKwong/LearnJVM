@@ -1,0 +1,131 @@
+    498    1       3       java.lang.String::equals (81 bytes)
+    501    2       3       java.lang.String::indexOf (70 bytes)
+                       501    3       4       java.lang.String::charAt (29 bytes)
+           @ 66   java.lang.String::indexOfSupplementary (71 bytes)   callee is too large
+    504    4       3       java.lang.String::hashCode (55 bytes)
+    505    5       3       java.lang.Character::toLowerCase (9 bytes)
+    505    9       4       java.lang.String::length (6 bytes)
+                              @ 1   java.lang.CharacterData::of (120 bytes)   callee is too large
+                              @ 5   java.lang.CharacterData::toLowerCase (0 bytes)   no static binding
+    506    6       3       java.lang.CharacterData::of (120 bytes)
+    506   10     n 0       java.lang.System::arraycopy (native)   (static)
+    507    7       3       java.lang.CharacterDataLatin1::toLowerCase (39 bytes)
+                              @ 4   java.lang.CharacterDataLatin1::getProperties (11 bytes)
+    507    8       3       java.lang.CharacterDataLatin1::getProperties (11 bytes)
+    514   11       3       java.lang.AbstractStringBuilder::ensureCapacityInternal (27 bytes)
+                              @ 17   java.lang.AbstractStringBuilder::newCapacity (39 bytes)   callee is too large
+                              @ 20   java.util.Arrays::copyOf (19 bytes)
+                                @ 11   java.lang.Math::min (11 bytes)
+                                @ 14   java.lang.System::arraycopy (0 bytes)   intrinsic
+    516   12       3       java.lang.Object::<init> (1 bytes)
+    516   13       3       java.util.Arrays::copyOfRange (63 bytes)
+                              @ 16   java.lang.StringBuilder::<init> (7 bytes)
+                                @ 3   java.lang.AbstractStringBuilder::<init> (12 bytes)
+                                  @ 1   java.lang.Object::<init> (1 bytes)
+                              @ 20   java.lang.StringBuilder::append (8 bytes)
+                                @ 2   java.lang.AbstractStringBuilder::append (62 bytes)   callee is too large
+                              @ 25   java.lang.StringBuilder::append (8 bytes)
+                                @ 2   java.lang.AbstractStringBuilder::append (50 bytes)   callee is too large
+                              @ 29   java.lang.StringBuilder::append (8 bytes)
+                                @ 2   java.lang.AbstractStringBuilder::append (62 bytes)   callee is too large
+                              @ 32   java.lang.StringBuilder::toString (17 bytes)
+                                @ 13   java.lang.String::<init> (82 bytes)   callee is too large
+                              @ 35   java.lang.IllegalArgumentException::<init> (6 bytes)   don't inline Throwable constructors
+                              @ 54   java.lang.Math::min (11 bytes)
+                              @ 57   java.lang.System::arraycopy (0 bytes)   intrinsic
+    519   15       3       java.lang.AbstractStringBuilder::append (29 bytes)
+                              @ 7   java.lang.AbstractStringBuilder::ensureCapacityInternal (27 bytes)
+                                @ 17   java.lang.AbstractStringBuilder::newCapacity (39 bytes)   callee is too large
+                                @ 20   java.util.Arrays::copyOf (19 bytes)
+                                  @ 11   java.lang.Math::min (11 bytes)
+                                  @ 14   java.lang.System::arraycopy (0 bytes)   intrinsic
+    521   19       1       java.lang.Object::<init> (1 bytes)
+    521   12       3       java.lang.Object::<init> (1 bytes)   made not entrant
+    522   17       3       java.io.WinNTFileSystem::isSlash (18 bytes)
+    522   18  s    3       java.lang.StringBuffer::append (13 bytes)
+                              @ 7   java.lang.AbstractStringBuilder::append (29 bytes)
+                                @ 7   java.lang.AbstractStringBuilder::ensureCapacityInternal (27 bytes)
+                                  @ 17   java.lang.AbstractStringBuilder::newCapacity (39 bytes)   callee is too large
+                                  @ 20   java.util.Arrays::copyOf (19 bytes)
+                                    @ 11   java.lang.Math::min (11 bytes)
+                                    @ 14   java.lang.System::arraycopy (0 bytes)   intrinsic
+    524   16       3       java.lang.StringBuilder::append (8 bytes)
+                              @ 2   java.lang.AbstractStringBuilder::append (29 bytes)
+                                @ 7   java.lang.AbstractStringBuilder::ensureCapacityInternal (27 bytes)
+                                  @ 17   java.lang.AbstractStringBuilder::newCapacity (39 bytes)   callee is too large
+                                  @ 20   java.util.Arrays::copyOf (19 bytes)
+                                    @ 11   java.lang.Math::min (11 bytes)
+                                    @ 14   java.lang.System::arraycopy (0 bytes)   intrinsic
+    526   14       3       java.lang.String::<init> (82 bytes)
+                              @ 1   java.lang.Object::<init> (1 bytes)
+                              @ 13  java/lang/StringIndexOutOfBoundsException::<init> (not loaded)   not inlineable
+                              @ 30  java/lang/StringIndexOutOfBoundsException::<init> (not loaded)   not inlineable
+                              @ 65  java/lang/StringIndexOutOfBoundsException::<init> (not loaded)   not inlineable
+                              @ 75   java.util.Arrays::copyOfRange (63 bytes)   callee is too large
+    532   20       3       java.util.HashMap::hash (20 bytes)
+                              @ 9   java.lang.Object::hashCode (0 bytes)   no static binding
+    533   21   !   3       java.io.BufferedReader::readLine (304 bytes)
+                              533   23       4       java.lang.String::equals (81 bytes)
+    @ 11   java.io.BufferedReader::ensureOpen (18 bytes)
+                                @ 13  java/io/IOException::<init> (not loaded)   not inlineable
+                              @ 44   java.io.BufferedReader::fill (170 bytes)   callee is too large
+              s               @ 63   java.lang.StringBuffer::length (5 bytes)
+              s               @ 70   java.lang.StringBuffer::toString (36 bytes)   callee is too large
+                              @ 208   java.lang.String::<init> (82 bytes)   callee is too large
+              s               @ 226   java.lang.StringBuffer::append (15 bytes)
+                                @ 9   java.lang.AbstractStringBuilder::append (40 bytes)   callee is too large
+              s               @ 231   java.lang.StringBuffer::toString (36 bytes)   callee is too large
+                              @ 275   java.lang.StringBuffer::<init> (6 bytes)
+                                @ 2   java.lang.AbstractStringBuilder::<init> (12 bytes)
+                                  @ 1   java.lang.Object::<init> (1 bytes)
+              s               @ 289   java.lang.StringBuffer::append (15 bytes)
+                                @ 9   java.lang.AbstractStringBuilder::append (40 bytes)   callee is too large
+    538   22       3       java.util.HashMap::getNode (148 bytes)
+                              @ 59   java.lang.Object::equals (11 bytes)   no static binding
+                              @ 94   java.util.HashMap$TreeNode::getTreeNode (22 bytes)   not inlineable
+                              @ 126   java.lang.Object::equals (11 bytes)   no static binding
+    539    1       3       java.lang.String::equals (81 bytes)   made not entrant
+    539   24       3       java.util.LinkedList::indexOf (73 bytes)
+                              @ 52   java.lang.Object::equals (11 bytes)   no static binding
+    541   25       3       java.util.HashMap::get (23 bytes)
+                              @ 2   java.util.HashMap::hash (20 bytes)
+                                @ 9   java.lang.Object::hashCode (0 bytes)   no static binding
+                              @ 6   java.util.HashMap::getNode (148 bytes)   callee is too large
+    542   27       3       java.lang.String::startsWith (72 bytes)
+    542   26       3       sun.misc.JarIndex::addToList (59 bytes)
+                              @ 2   java.util.HashMap::get (23 bytes)   no static binding
+                              @ 19   java.util.LinkedList::<init> (10 bytes)
+                                @ 1   java.util.AbstractSequentialList::<init> (5 bytes)
+                                  @ 1   java.util.AbstractList::<init> (10 bytes)
+                                    @ 1   java.util.AbstractCollection::<init> (5 bytes)
+                                      @ 1   java.lang.Object::<init> (1 bytes)
+                              @ 27   java.util.LinkedList::add (7 bytes)
+                                @ 2   java.util.LinkedList::linkLast (59 bytes)   callee is too large
+                              @ 35   java.util.HashMap::put (13 bytes)
+                                @ 2   java.util.HashMap::hash (20 bytes)
+                                  @ 9   java.lang.String::hashCode (55 bytes)   callee is too large
+                                @ 9   java.util.HashMap::putVal (300 bytes)   callee is too large
+                              @ 45   java.util.LinkedList::contains (15 bytes)
+                                @ 2   java.util.LinkedList::indexOf (73 bytes)   callee is too large
+                              @ 54   java.util.LinkedList::add (7 bytes)
+                                @ 2   java.util.LinkedList::linkLast (59 bytes)   callee is too large
+    546   28       3       java.util.LinkedList::add (7 bytes)
+                              @ 2   java.util.LinkedList::linkLast (59 bytes)   callee is too large
+    546   29       3       java.util.LinkedList::linkLast (59 bytes)
+                              @ 12   java.util.LinkedList$Node::<init> (20 bytes)
+                                @ 1   java.lang.Object::<init> (1 bytes)
+    547   30       3       java.util.LinkedList$Node::<init> (20 bytes)
+                              @ 1   java.lang.Object::<init> (1 bytes)
+    558   31 %     3       PrintCompilation::doubleValue @ 2 (18 bytes)
+    558   32       3       PrintCompilation::doubleValue (18 bytes)
+    559   33 %     4       PrintCompilation::doubleValue @ 2 (18 bytes)
+    560   31 %     3       PrintCompilation::doubleValue @ -2 (18 bytes)   made not entrant
+    560   34       4       PrintCompilation::doubleValue (18 bytes)
+    561   32       3       PrintCompilation::doubleValue (18 bytes)   made not entrant
+    562   35       3       PrintCompilation::calcSum (26 bytes)
+                              @ 12   PrintCompilation::doubleValue (18 bytes)   inlining prohibited by policy
+    563   36 %     4       PrintCompilation::calcSum @ 4 (26 bytes)
+                              @ 12   PrintCompilation::doubleValue (18 bytes)   inline (hot)
+    566   37       4       PrintCompilation::calcSum (26 bytes)
+                              @ 12   PrintCompilation::doubleValue (18 bytes)   inline (hot)
+    569   35       3       PrintCompilation::calcSum (26 bytes)   made not entrant

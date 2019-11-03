@@ -1,0 +1,6 @@
+.settings/
+target/
+.classpath
+.project
+java_pid*
+**/*.class
