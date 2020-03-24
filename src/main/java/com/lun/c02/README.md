@@ -161,7 +161,7 @@ Java内存区域划分实际上远比这复杂。
 
 JVM规范中，这区域规定2种异常状况：
 1. **StackOverflowError SOE**，当线程请求栈深度大于VM所允许深度时。
-2. ** OutOfMemoryError OOME**，VM Stack可动态扩展（当前大部分JVM都可动态扩展，只不过JVM规范中允许固定程度的VM Stack），当扩展时无法申请到足够的内存。
+2. **OutOfMemoryError OOME**，VM Stack可动态扩展（当前大部分JVM都可动态扩展，只不过JVM规范中允许固定程度的VM Stack），当扩展时无法申请到足够的内存。
 
 ---
 
@@ -225,7 +225,7 @@ Method Area 线程共享。
 4. 即时编译器编译后的代码等数据
 5. 。。。
 
-JVM规范 把 方法区描述为对的一个逻辑部分，但它别名叫做Non-Heap（非堆），目的与Java堆区分开。
+JVM规范 把 方法区描述为堆的一个逻辑部分，但它别名叫做Non-Heap（非堆），目的与Java堆区分开。
 
 ---
 
